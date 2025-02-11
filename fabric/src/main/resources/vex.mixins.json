@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"package": "com.example.mixin.client",
+	"package": "me.enzol.minecraft.roguelike.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
+	"mixins": [
+		"MinecraftServerMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

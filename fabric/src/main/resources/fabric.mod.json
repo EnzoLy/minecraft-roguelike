@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vex",
+	"version": "${version}",
+	"name": "Vex mod",
+	"description": "Transform Minecraft into a true roguelike experience with dynamic skill trees, RPG-style items, unique character classes, and brand-new gameplay mechanics that enhance progression and challenge.",
+	"authors": [
+		"EnzoL_"
+	],
+	"contact": {
+		"email": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/vex/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.enzol.minecraft.roguelike.VexMod"
+		],
+		"client": [
+			"me.enzol.minecraft.roguelike.client.VexClient"
+		]
+	},
+	"mixins": [
+		"vex.mixins.json",
+		{
+			"config": "vex.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
