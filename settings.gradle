@@ -11,5 +11,5 @@ pluginManagement {
 rootProject.name = "minecraft-roguelike"
 
 include 'api'
-include 'common'
+include 'core'
 include 'fabric'
